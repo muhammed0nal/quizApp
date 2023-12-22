@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="girisEkrani" id="girisEkrani">
+      <button id="start">Oyuna Başla</button>
+      <button>Skor Tablosu</button>
+    </div>
+    <!-- <div class="score"></div> -->
+    <div class="quiz" id="quiz">
+      <div class="info" id="info">
+        <h1>Quiz App</h1>
+        <div>
+          <h2>1</h2>
+          <h2>1</h2>
+        </div>
+      </div>
+      <div class="progress" id="progress"></div>
+      <div class="title" id="title">
+        <p>
+          Aşağıadkilerden hangisi Lorem ipsum dolor sit. Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit. Expedita, laborum.
+        </p>
+        <div class="answers">
+          <div id="a">
+            <h3>A: deneme</h3>
+            <span> </span>
+          </div>
+          <div id="b">
+            <h3>A: deneme</h3>
+            <span></span>
+          </div>
+          <div id="c">
+            <h3>A: deneme</h3>
+            <span><i></i></span>
+          </div>
+          <div id="d">
+            <h3>A: deneme</h3>
+            <span><i></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="next">
+        <button id="next">Sonraki</button>
+        <button id="pas">Pas</button>
+      </div>
+    </div>
+
+    <div class="bitisEkrani" id="bitisEkrani">
+      <h1 id="result"></h1>
+      <div>
+        <button class="yeniOyun" id="yeniOyun">Yeni Oyun</button>
+        <button class="basaDon" id="basaDon">Başa Dön</button>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+    <script src="getQuiz.js"></script>
+    <script src="storage.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

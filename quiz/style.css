@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.quiz {
+  border-radius: 5px;
+  background-color: #45474b;
+  padding-top: 1.5rem !important;
+  padding-right: 6rem;
+  padding-left: 6rem;
+  padding-bottom: 1.5rem;
+  color: #f5f7f8;
+  width: 747px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+  margin-bottom: 1.5rem;
+  padding: 0.7rem;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border: 5px solid #f4ce14;
+  border-radius: 5px;
+}
+.info h1 {
+  text-transform: uppercase;
+}
+.info h2 {
+  border-radius: 3px;
+  border: 1px solid #f4ce14;
+  padding: 4px;
+  color: #f5f7f8;
+}
+.info div {
+  display: flex;
+  gap: 3rem;
+}
+.progress {
+  height: 4px;
+  transition: width 0.1s;
+  width: 0;
+  /* position: relative; */
+  /* animation: progressBar 12s linear; */
+  background-color: #f4ce14;
+  margin-bottom: 2rem;
+}
+.title p {
+  font-size: 25px;
+}
+.answers div {
+  border: 3px solid #495e57;
+  margin-top: 1rem;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.answers div:hover {
+  transform: scale(1.1);
+}
+.answers i {
+  font-size: 25px;
+}
+
+/* giriş ekrani */
+.girisEkrani {
+  border-radius: 5px;
+  display: flex;
+  position: absolute;
+  gap: 3rem;
+  background-color: #45474b;
+  transition: visibility 0.6s, opacity 0.5s linear;
+  visibility: visible;
+  opacity: 1;
+}
+.girisEkrani button {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 2rem;
+  color: #f5f7f8;
+  font-size: 20px;
+}
+
+.girisEkrani button:hover {
+  transform: scale(1.2);
+}
+
+/* bitis */
+
+.bitisEkrani {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  text-align: center;
+  padding-top: 20px;
+  position: absolute;
+  gap: 3rem;
+  background-color: #45474b;
+  transition: visibility 0.6s, opacity 0.5s linear;
+  visibility: hidden;
+  color: #f5f7f8;
+  opacity: 0;
+}
+.bitisEkrani button {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 2rem;
+  color: #f5f7f8;
+  font-size: 20px;
+}
+
+.bitisEkrani button:hover {
+  transform: scale(1.2);
+}
+/* next */
+
+.next {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+.next button {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  color: #f5f7f8;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 3px solid #f4ce14;
+  transition: all 0.6s;
+}
+.next button:hover {
+  transform: scale(1.2);
+}
+/* animation */
+@keyframes progressBar {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 555px;
+  }
+}
